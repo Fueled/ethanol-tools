@@ -34,12 +34,9 @@ typedef NS_OPTIONS(NSUInteger, ETHLogLevel) {
  *  This provides an interface (To be registered wth ETHInjector) that can be used as a way to implement any kind of
  *  logging framework in a generic manner.
  *  Ethanol provides for now only one logger, implemented via CocoaLumberjack, called CocoaLumberjackLogging.
- *  Because such classes should register themselves with ETHInjector, once the subspec is added to your project
- *  there is no other action to do other than directly use the ETHLog<Level> macros.
- *  The ETHLog<Level> macros uses the [ETHFramework ethanolLogLevel] property and the supplied flag to determine
- *  whether the log should be displayed or not. The available levels are defined in Ethanol/ETHConstants.h
- *  Also, by default, the logging for Ethanol itself is disable. You can enable it by including the subspec
- *  'EnableInternalLogging'.
+ *  You should register in the injector the class that is going to be used for logging, via:
+ *  (ObjC)  [[ETHInjector defaultInjector] bindClass:[<Logger classname> class] toProtocol:@protocol(ETHLogger)];
+ *  (Swift) ETHInjector.defaultInjector().bindClass(<Logger classname>.self, toProtocol: ETHLogger.self)
  *  You can also chose to completely disable Ethanol's logging system (In objective-c) by defining the macro
  *  ETHANOL_DISABLE_LOGGING in the Build Settings of your app. This ensure that every call to the ETHLog<Level> macros
  *  will be converted into noop.
@@ -69,8 +66,9 @@ typedef NS_OPTIONS(NSUInteger, ETHLogLevel) {
 
 #define _ETHLog(flag, formatString, ...) \
   do { \
-    if(([ETHFramework ethanolLogLevel] & (flag)) == (flag)) { \
-      [[[ETHFramework injector] instanceForProtocol:@protocol(ETHLogger)] log:(flag) file:[NSString stringWithUTF8String:__FILE__] function:NSStringFromSelector(_cmd) line:__LINE__ format:(formatString), ## __VA_ARGS__]; \
+    id<ETHLogger> logger = [[ETHInjector defaultInjector] instanceForProtocol:@protocol(ETHLogger)]; \
+    if((logger.logLevel & (flag)) == (flag)) { \
+      [logger log:(flag) file:[NSString stringWithUTF8String:__FILE__] function:NSStringFromSelector(_cmd) line:__LINE__ format:(formatString), ## __VA_ARGS__]; \
     } \
   } while(0)
 

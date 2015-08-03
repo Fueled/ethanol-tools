@@ -16,8 +16,6 @@
 
 + (void)load {
   if([DDTTYLogger class] != nil) {
-    [[ETHInjector defaultInjector] bindClass:self toProtocol:@protocol(ETHLogger)];
-    
     [[DDTTYLogger sharedInstance] setForegroundColor:[UIColor whiteColor] backgroundColor:[UIColor grayColor] forFlag:(int)ETHLogFlagTrace];
     [[DDTTYLogger sharedInstance] setForegroundColor:[UIColor grayColor] backgroundColor:nil forFlag:(int)ETHLogFlagVerbose];
     [[DDTTYLogger sharedInstance] setForegroundColor:[UIColor colorWithRed:0.418 green:0.293 blue:0.148 alpha:1.000] backgroundColor:nil forFlag:(int)ETHLogFlagDebug];
