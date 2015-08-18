@@ -15,7 +15,7 @@
 		F498B8AB1B668B2B00DA1778 /* ETHPausableTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = F498B8A41B668B2B00DA1778 /* ETHPausableTimer.m */; };
 		F498B8AC1B668B2B00DA1778 /* ETHScreenManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F498B8A51B668B2B00DA1778 /* ETHScreenManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F498B8AD1B668B2B00DA1778 /* ETHScreenManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F498B8A61B668B2B00DA1778 /* ETHScreenManager.m */; };
-		F498B8AF1B668DE800DA1778 /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F498B8AE1B668DE800DA1778 /* CocoaLumberjack.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		F498B8AF1B668DE800DA1778 /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F498B8AE1B668DE800DA1778 /* CocoaLumberjack.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		F498B8B41B668FB400DA1778 /* SwiftLogging.swift in Sources */ = {isa = PBXBuildFile; fileRef = F498B8B31B668FB400DA1778 /* SwiftLogging.swift */; };
 		F498B8B71B66902700DA1778 /* ETHInjector.h in Headers */ = {isa = PBXBuildFile; fileRef = F498B8B51B66902700DA1778 /* ETHInjector.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F498B8B81B66902700DA1778 /* ETHInjector.m in Sources */ = {isa = PBXBuildFile; fileRef = F498B8B61B66902700DA1778 /* ETHInjector.m */; };
