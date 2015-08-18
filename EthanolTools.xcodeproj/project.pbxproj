@@ -15,12 +15,12 @@
 		F498B8AB1B668B2B00DA1778 /* ETHPausableTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = F498B8A41B668B2B00DA1778 /* ETHPausableTimer.m */; };
 		F498B8AC1B668B2B00DA1778 /* ETHScreenManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F498B8A51B668B2B00DA1778 /* ETHScreenManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F498B8AD1B668B2B00DA1778 /* ETHScreenManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F498B8A61B668B2B00DA1778 /* ETHScreenManager.m */; };
-		F498B8AF1B668DE800DA1778 /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F498B8AE1B668DE800DA1778 /* CocoaLumberjack.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		F498B8B41B668FB400DA1778 /* SwiftLogging.swift in Sources */ = {isa = PBXBuildFile; fileRef = F498B8B31B668FB400DA1778 /* SwiftLogging.swift */; };
 		F498B8B71B66902700DA1778 /* ETHInjector.h in Headers */ = {isa = PBXBuildFile; fileRef = F498B8B51B66902700DA1778 /* ETHInjector.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F498B8B81B66902700DA1778 /* ETHInjector.m in Sources */ = {isa = PBXBuildFile; fileRef = F498B8B61B66902700DA1778 /* ETHInjector.m */; };
 		F4C14E041B43294C003D1286 /* EthanolTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4C14DF91B43294C003D1286 /* EthanolTools.framework */; };
 		F4C14E091B43294C003D1286 /* EthanolToolsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C14E081B43294C003D1286 /* EthanolToolsTests.m */; };
+		F4C2754D1B83AC6900838B17 /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4C2754C1B83AC6900838B17 /* CocoaLumberjack.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +41,6 @@
 		F498B8A41B668B2B00DA1778 /* ETHPausableTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETHPausableTimer.m; sourceTree = "<group>"; };
 		F498B8A51B668B2B00DA1778 /* ETHScreenManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETHScreenManager.h; sourceTree = "<group>"; };
 		F498B8A61B668B2B00DA1778 /* ETHScreenManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETHScreenManager.m; sourceTree = "<group>"; };
-		F498B8AE1B668DE800DA1778 /* CocoaLumberjack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaLumberjack.framework; path = Carthage/Build/iOS/CocoaLumberjack.framework; sourceTree = "<group>"; };
 		F498B8B31B668FB400DA1778 /* SwiftLogging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftLogging.swift; sourceTree = "<group>"; };
 		F498B8B51B66902700DA1778 /* ETHInjector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETHInjector.h; sourceTree = "<group>"; };
 		F498B8B61B66902700DA1778 /* ETHInjector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETHInjector.m; sourceTree = "<group>"; };
@@ -51,6 +50,7 @@
 		F4C14E031B43294C003D1286 /* EthanolToolsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EthanolToolsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4C14E081B43294C003D1286 /* EthanolToolsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EthanolToolsTests.m; sourceTree = "<group>"; };
 		F4C14E0A1B43294C003D1286 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4C2754C1B83AC6900838B17 /* CocoaLumberjack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CocoaLumberjack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F498B8AF1B668DE800DA1778 /* CocoaLumberjack.framework in Frameworks */,
+				F4C2754D1B83AC6900838B17 /* CocoaLumberjack.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,20 +73,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F498B8B01B668DED00DA1778 /* Optional Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				F498B8AE1B668DE800DA1778 /* CocoaLumberjack.framework */,
-			);
-			name = "Optional Frameworks";
-			sourceTree = "<group>";
-		};
 		F4C14DEF1B43294C003D1286 = {
 			isa = PBXGroup;
 			children = (
 				F4C14DFB1B43294C003D1286 /* EthanolTools */,
 				F4C14E071B43294C003D1286 /* EthanolToolsTests */,
-				F498B8B01B668DED00DA1778 /* Optional Frameworks */,
+				F4C2754E1B83AC6F00838B17 /* Dependencies */,
 				F4C14DFA1B43294C003D1286 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -126,6 +118,14 @@
 				F4C14E0A1B43294C003D1286 /* Info.plist */,
 			);
 			path = EthanolToolsTests;
+			sourceTree = "<group>";
+		};
+		F4C2754E1B83AC6F00838B17 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				F4C2754C1B83AC6900838B17 /* CocoaLumberjack.framework */,
+			);
+			name = Dependencies;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -366,10 +366,6 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
 				INFOPLIST_FILE = EthanolTools/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -388,10 +384,6 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
 				INFOPLIST_FILE = EthanolTools/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
