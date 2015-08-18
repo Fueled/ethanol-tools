@@ -72,7 +72,7 @@ typedef NS_OPTIONS(NSUInteger, ETHLogLevel) {
     } \
   } while(0)
 
-#if !defined(ETHANOL_DISABLE_LOGGING) && (!defined(IS_ETHANOL_SOURCES) || (defined(IS_ETHANOL_SOURCES) && defined(ETHANOL_ENABLE_INTERNAL_LOGGING)))
+#if !defined(ETHANOL_DISABLE_LOGGING)
 #define _ETHTryLog(flag, formatString, ...) _ETHLog(flag, formatString, ## __VA_ARGS__)
 #else
 #define _ETHTryLog(flag, formatString, ...) do { } while(0)
