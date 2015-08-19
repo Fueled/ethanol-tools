@@ -60,6 +60,10 @@
 }
 
 - (NSTimeInterval)timeInterval {
+  if(!self.isPaused) {
+    _timeInterval -= [[NSDate date] timeIntervalSinceDate:self.startDate];
+    self.startDate = [NSDate date];
+  }
   if(_timeInterval < 0.0f) {
     _timeInterval = 0.0f;
   }
@@ -79,7 +83,7 @@
 }
 
 - (BOOL)isPaused {
-  return self.timer == nil && self.startDate == nil;
+  return self.timer == nil || self.startDate == nil;
 }
 
 - (void)setForcePauseInBackground:(BOOL)forcePauseInBackground {
@@ -117,7 +121,7 @@
 
 - (void)pause {
   if(!self.isPaused) {
-    self.timeInterval -= [[NSDate date] timeIntervalSinceDate:self.startDate];
+    _timeInterval -= [[NSDate date] timeIntervalSinceDate:self.startDate];
   }
   self.startDate = nil;
   self.timer = nil;
@@ -137,6 +141,7 @@
 
 - (void)timerTriggered:(NSTimer *)timer {
   if(self.timeInterval > 0.0f) {
+    self.timeInterval = 0.0;
     if(self.block != nil) {
       self.block(self);
     } else {
