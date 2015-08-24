@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C4FFBD31B8BD0B9002C3876 /* PausableTimerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C4FFBD21B8BD0B9002C3876 /* PausableTimerTests.m */; };
 		F42307CD1B4C2639007425D4 /* EthanolTools.h in Headers */ = {isa = PBXBuildFile; fileRef = F4C14DFC1B43294C003D1286 /* EthanolTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F45ADFEE1B852DBD003842E1 /* InjectorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F45ADFED1B852DBD003842E1 /* InjectorTests.m */; };
 		F498B8A71B668B2B00DA1778 /* ETHCocoaLumberjackLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = F498B8A01B668B2B00DA1778 /* ETHCocoaLumberjackLogger.h */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C4FFBD21B8BD0B9002C3876 /* PausableTimerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PausableTimerTests.m; sourceTree = "<group>"; };
 		F45ADFED1B852DBD003842E1 /* InjectorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InjectorTests.m; sourceTree = "<group>"; };
 		F498B8A01B668B2B00DA1778 /* ETHCocoaLumberjackLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETHCocoaLumberjackLogger.h; sourceTree = "<group>"; };
 		F498B8A11B668B2B00DA1778 /* ETHCocoaLumberjackLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETHCocoaLumberjackLogger.m; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 			children = (
 				F4C14E0A1B43294C003D1286 /* Info.plist */,
 				F45ADFED1B852DBD003842E1 /* InjectorTests.m */,
+				0C4FFBD21B8BD0B9002C3876 /* PausableTimerTests.m */,
 			);
 			path = EthanolToolsTests;
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C4FFBD31B8BD0B9002C3876 /* PausableTimerTests.m in Sources */,
 				F45ADFEE1B852DBD003842E1 /* InjectorTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
