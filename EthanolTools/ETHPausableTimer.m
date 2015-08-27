@@ -140,13 +140,11 @@
 }
 
 - (void)timerTriggered:(NSTimer *)timer {
-  if(self.timeInterval > 0.0f) {
-    self.timeInterval = 0.0;
-    if(self.block != nil) {
-      self.block(self);
-    } else {
-      [self.target performSelectorOnMainThread:self.selector withObject:self waitUntilDone:NO];
-    }
+  self.timeInterval = 0.0;
+  if(self.block != nil) {
+    self.block(self);
+  } else {
+    [self.target performSelectorOnMainThread:self.selector withObject:self waitUntilDone:NO];
   }
   self.startDate = nil;
   self.timer = nil;
