@@ -7,8 +7,9 @@
 //
 
 #import <XCTest/XCTest.h>
-
 #import "ETHPausableTimer.h"
+
+@import EthanolUtilities;
 
 @interface ETHPausableTimer (PrivateTests)
 
