@@ -35,20 +35,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0C4FFBD21B8BD0B9002C3876 /* PausableTimerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PausableTimerTests.m; sourceTree = "<group>"; };
-		F45ADFED1B852DBD003842E1 /* InjectorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InjectorTests.m; sourceTree = "<group>"; };
-		F498B8A01B668B2B00DA1778 /* ETHCocoaLumberjackLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETHCocoaLumberjackLogger.h; sourceTree = "<group>"; };
-		F498B8A11B668B2B00DA1778 /* ETHCocoaLumberjackLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETHCocoaLumberjackLogger.m; sourceTree = "<group>"; };
-		F498B8A21B668B2B00DA1778 /* ETHLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETHLogger.h; sourceTree = "<group>"; };
-		F498B8A31B668B2B00DA1778 /* ETHPausableTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETHPausableTimer.h; sourceTree = "<group>"; };
-		F498B8A41B668B2B00DA1778 /* ETHPausableTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETHPausableTimer.m; sourceTree = "<group>"; };
-		F498B8A51B668B2B00DA1778 /* ETHScreenManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETHScreenManager.h; sourceTree = "<group>"; };
-		F498B8A61B668B2B00DA1778 /* ETHScreenManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETHScreenManager.m; sourceTree = "<group>"; };
+		0C4FFBD21B8BD0B9002C3876 /* PausableTimerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.objc; path = PausableTimerTests.m; sourceTree = "<group>"; tabWidth = 2; usesTabs = 0; };
+		F45ADFED1B852DBD003842E1 /* InjectorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.objc; path = InjectorTests.m; sourceTree = "<group>"; tabWidth = 2; usesTabs = 0; };
+		F498B8A01B668B2B00DA1778 /* ETHCocoaLumberjackLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.h; path = ETHCocoaLumberjackLogger.h; sourceTree = "<group>"; tabWidth = 2; usesTabs = 0; };
+		F498B8A11B668B2B00DA1778 /* ETHCocoaLumberjackLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.objc; path = ETHCocoaLumberjackLogger.m; sourceTree = "<group>"; tabWidth = 2; usesTabs = 0; };
+		F498B8A21B668B2B00DA1778 /* ETHLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.h; path = ETHLogger.h; sourceTree = "<group>"; tabWidth = 2; usesTabs = 0; };
+		F498B8A31B668B2B00DA1778 /* ETHPausableTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.h; path = ETHPausableTimer.h; sourceTree = "<group>"; tabWidth = 2; usesTabs = 0; };
+		F498B8A41B668B2B00DA1778 /* ETHPausableTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.objc; path = ETHPausableTimer.m; sourceTree = "<group>"; tabWidth = 2; usesTabs = 0; };
+		F498B8A51B668B2B00DA1778 /* ETHScreenManager.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.h; path = ETHScreenManager.h; sourceTree = "<group>"; tabWidth = 2; usesTabs = 0; };
+		F498B8A61B668B2B00DA1778 /* ETHScreenManager.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.objc; path = ETHScreenManager.m; sourceTree = "<group>"; tabWidth = 2; usesTabs = 0; };
 		F498B8B31B668FB400DA1778 /* SwiftLogging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftLogging.swift; sourceTree = "<group>"; };
-		F498B8B51B66902700DA1778 /* ETHInjector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETHInjector.h; sourceTree = "<group>"; };
-		F498B8B61B66902700DA1778 /* ETHInjector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETHInjector.m; sourceTree = "<group>"; };
+		F498B8B51B66902700DA1778 /* ETHInjector.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.h; path = ETHInjector.h; sourceTree = "<group>"; tabWidth = 2; usesTabs = 0; };
+		F498B8B61B66902700DA1778 /* ETHInjector.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.objc; path = ETHInjector.m; sourceTree = "<group>"; tabWidth = 2; usesTabs = 0; };
 		F4C14DF91B43294C003D1286 /* EthanolTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EthanolTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F4C14DFC1B43294C003D1286 /* EthanolTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EthanolTools.h; sourceTree = "<group>"; };
+		F4C14DFC1B43294C003D1286 /* EthanolTools.h */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.c.h; path = EthanolTools.h; sourceTree = "<group>"; tabWidth = 2; usesTabs = 0; };
 		F4C14DFE1B43294C003D1286 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4C14E031B43294C003D1286 /* EthanolToolsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EthanolToolsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4C14E0A1B43294C003D1286 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
