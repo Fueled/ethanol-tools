@@ -1,1 +1,2 @@
 github "CocoaLumberjack/CocoaLumberjack" "swift_2.0"
+git "git@github.com:Fueled/ethanol-utilities.git" "deltaComparison"

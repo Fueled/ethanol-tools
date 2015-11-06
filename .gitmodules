@@ -1,3 +1,6 @@
 [submodule "Carthage/Checkouts/CocoaLumberjack"]
 	path = Carthage/Checkouts/CocoaLumberjack
 	url = https://github.com/CocoaLumberjack/CocoaLumberjack.git
+[submodule "Carthage/Checkouts/ethanol-utilities"]
+	path = Carthage/Checkouts/ethanol-utilities
+	url = git@github.com:Fueled/ethanol-utilities.git

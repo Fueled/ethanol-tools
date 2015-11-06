@@ -7,8 +7,9 @@
 //
 
 #import <XCTest/XCTest.h>
-
 #import "ETHPausableTimer.h"
+
+@import EthanolUtilities;
 
 @interface ETHPausableTimer (PrivateTests)
 
@@ -92,7 +93,7 @@
   NSDate *beginDate = [NSDate date];
   ETHPausableTimer *timer = [[ETHPausableTimer alloc] initWithTimeInterval:5.0f block:^(ETHPausableTimer *timer) {
     NSTimeInterval differenceSeconds = [[NSDate date] timeIntervalSinceDate:beginDate];
-    if (differenceSeconds > 4.9f && differenceSeconds < 5.1f) {
+    if (ETH_COMPARE_WITH_DELTA(differenceSeconds, 5.0, 0.25)) {
       [expectation fulfill];
     }
   } paused:YES];
@@ -115,7 +116,7 @@
   [timer pause];
   
   [NSThread sleepForTimeInterval:1.0f];
-  if (timer.timeInterval > 2.9f && timer.timeInterval < 3.1f) {
+  if (ETH_COMPARE_WITH_DELTA(timer.timeInterval, 3.0, 0.25)) {
     [expectation fulfill];
   }
   
@@ -132,7 +133,7 @@
   NSDate *beginDate = [NSDate date];
   ETHPausableTimer *timer = [[ETHPausableTimer alloc] initWithTimeInterval:5.0f block:^(ETHPausableTimer *timer) {
     NSTimeInterval differenceSeconds = [[NSDate date] timeIntervalSinceDate:beginDate];
-    if (differenceSeconds > 7.9f && differenceSeconds < 8.1f) {
+    if (ETH_COMPARE_WITH_DELTA(differenceSeconds, 8.0, 0.25)) {
       [expectation fulfill];
     }
   } paused:NO];
