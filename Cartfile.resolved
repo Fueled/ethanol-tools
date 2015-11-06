@@ -1,2 +1,2 @@
-github "CocoaLumberjack/CocoaLumberjack" "479279f102a8ab23084290697bafa77aac0d1bdf"
-git "git@github.com:Fueled/ethanol-utilities.git" "e25cfdbefddf8f49cbda9975dfb20d0aef09c233"
+github "CocoaLumberjack/CocoaLumberjack" "2.2.0"
+github "Fueled/ethanol-utilities" "0.1.8"
