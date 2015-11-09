@@ -12,7 +12,7 @@
 		F43F75E61B9F2A4E00954745 /* EthanolUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F43F75E51B9F2A4E00954745 /* EthanolUtilities.framework */; };
 		F43F75E91B9F2B7400954745 /* EthanolUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F43F75E51B9F2A4E00954745 /* EthanolUtilities.framework */; settings = {ASSET_TAGS = (); }; };
 		F45ADFEE1B852DBD003842E1 /* InjectorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F45ADFED1B852DBD003842E1 /* InjectorTests.m */; };
-		F498B8A71B668B2B00DA1778 /* ETHCocoaLumberjackLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = F498B8A01B668B2B00DA1778 /* ETHCocoaLumberjackLogger.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		F498B8A71B668B2B00DA1778 /* ETHCocoaLumberjackLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = F498B8A01B668B2B00DA1778 /* ETHCocoaLumberjackLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F498B8A81B668B2B00DA1778 /* ETHCocoaLumberjackLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = F498B8A11B668B2B00DA1778 /* ETHCocoaLumberjackLogger.m */; };
 		F498B8A91B668B2B00DA1778 /* ETHLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = F498B8A21B668B2B00DA1778 /* ETHLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F498B8AA1B668B2B00DA1778 /* ETHPausableTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = F498B8A31B668B2B00DA1778 /* ETHPausableTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };

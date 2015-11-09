@@ -20,3 +20,4 @@ FOUNDATION_EXPORT const unsigned char EthanolToolsVersionString[];
 #import "ETHLogger.h"
 #import "ETHPausableTimer.h"
 #import "ETHScreenManager.h"
+#import "ETHCocoaLumberjackLogger.h"

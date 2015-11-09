@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#include <EthanolTools/ETHLogger.h>
+#include "ETHLogger.h"
 
 @interface ETHCocoaLumberjackLogger : NSObject <ETHLogger>
 
