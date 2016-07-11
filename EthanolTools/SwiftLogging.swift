@@ -32,30 +32,30 @@ private func ETHSwiftLog(flag: ETHLogFlag, file: String, function: String, line:
   }
 }
 
-public func ETHLogTrace(format: String, file: String = __FILE__, function: String = __FUNCTION__, line: UInt = __LINE__, args: CVarArgType...) {
+public func ETHLogTrace(format: String, file: String = #file, function: String = #function, line: UInt = #line, args: CVarArgType...) {
   ETHSwiftLog(.Trace, file: file, function: function, line: line, format: format, args: getVaList(args));
 }
 
-public func ETHLogDebug(format: String, file: String = __FILE__, function: String = __FUNCTION__, line: UInt = __LINE__, args: CVarArgType...) {
+public func ETHLogDebug(format: String, file: String = #file, function: String = #function, line: UInt = #line, args: CVarArgType...) {
   ETHSwiftLog(.Debug, file: file, function: function, line: line, format: format, args: getVaList(args));
 }
 
-public func ETHLogVerbose(format: String, file: String = __FILE__, function: String = __FUNCTION__, line: UInt = __LINE__, args: CVarArgType...) {
+public func ETHLogVerbose(format: String, file: String = #file, function: String = #function, line: UInt = #line, args: CVarArgType...) {
   ETHSwiftLog(.Verbose, file: file, function: function, line: line, format: format, args: getVaList(args));
 }
 
-public func ETHLogInfo(format: String, file: String = __FILE__, function: String = __FUNCTION__, line: UInt = __LINE__, args: CVarArgType...) {
+public func ETHLogInfo(format: String, file: String = #file, function: String = #function, line: UInt = #line, args: CVarArgType...) {
   ETHSwiftLog(.Info, file: file, function: function, line: line, format: format, args: getVaList(args));
 }
 
-public func ETHLogWarning(format: String, file: String = __FILE__, function: String = __FUNCTION__, line: UInt = __LINE__, args: CVarArgType...) {
+public func ETHLogWarning(format: String, file: String = #file, function: String = #function, line: UInt = #line, args: CVarArgType...) {
   ETHSwiftLog(.Warning, file: file, function: function, line: line, format: format, args: getVaList(args));
 }
 
-public func ETHLogError(format: String, file: String = __FILE__, function: String = __FUNCTION__, line: UInt = __LINE__, args: CVarArgType...) {
+public func ETHLogError(format: String, file: String = #file, function: String = #function, line: UInt = #line, args: CVarArgType...) {
   ETHSwiftLog(.Error, file: file, function: function, line: line, format: format, args: getVaList(args));
 }
 
-public func ETHLogFatal(format: String, file: String = __FILE__, function: String = __FUNCTION__, line: UInt = __LINE__, args: CVarArgType...) {
+public func ETHLogFatal(format: String, file: String = #file, function: String = #function, line: UInt = #line, args: CVarArgType...) {
   ETHSwiftLog(.Fatal, file: file, function: function, line: line, format: format, args: getVaList(args));
 }
