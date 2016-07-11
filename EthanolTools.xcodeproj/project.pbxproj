@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C4FFBD31B8BD0B9002C3876 /* PausableTimerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C4FFBD21B8BD0B9002C3876 /* PausableTimerTests.m */; };
 		F42307CD1B4C2639007425D4 /* EthanolTools.h in Headers */ = {isa = PBXBuildFile; fileRef = F4C14DFC1B43294C003D1286 /* EthanolTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F498B8A71B668B2B00DA1778 /* ETHCocoaLumberjackLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = F498B8A01B668B2B00DA1778 /* ETHCocoaLumberjackLogger.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		F43F75E61B9F2A4E00954745 /* EthanolUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F43F75E51B9F2A4E00954745 /* EthanolUtilities.framework */; };
+		F43F75E91B9F2B7400954745 /* EthanolUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F43F75E51B9F2A4E00954745 /* EthanolUtilities.framework */; };
+		F45ADFEE1B852DBD003842E1 /* InjectorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F45ADFED1B852DBD003842E1 /* InjectorTests.m */; };
+		F498B8A71B668B2B00DA1778 /* ETHCocoaLumberjackLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = F498B8A01B668B2B00DA1778 /* ETHCocoaLumberjackLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F498B8A81B668B2B00DA1778 /* ETHCocoaLumberjackLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = F498B8A11B668B2B00DA1778 /* ETHCocoaLumberjackLogger.m */; };
 		F498B8A91B668B2B00DA1778 /* ETHLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = F498B8A21B668B2B00DA1778 /* ETHLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F498B8AA1B668B2B00DA1778 /* ETHPausableTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = F498B8A31B668B2B00DA1778 /* ETHPausableTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -19,7 +23,6 @@
 		F498B8B71B66902700DA1778 /* ETHInjector.h in Headers */ = {isa = PBXBuildFile; fileRef = F498B8B51B66902700DA1778 /* ETHInjector.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F498B8B81B66902700DA1778 /* ETHInjector.m in Sources */ = {isa = PBXBuildFile; fileRef = F498B8B61B66902700DA1778 /* ETHInjector.m */; };
 		F4C14E041B43294C003D1286 /* EthanolTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4C14DF91B43294C003D1286 /* EthanolTools.framework */; };
-		F4C14E091B43294C003D1286 /* EthanolToolsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C14E081B43294C003D1286 /* EthanolToolsTests.m */; };
 		F4C2754D1B83AC6900838B17 /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4C2754C1B83AC6900838B17 /* CocoaLumberjack.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,21 +37,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F498B8A01B668B2B00DA1778 /* ETHCocoaLumberjackLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETHCocoaLumberjackLogger.h; sourceTree = "<group>"; };
-		F498B8A11B668B2B00DA1778 /* ETHCocoaLumberjackLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETHCocoaLumberjackLogger.m; sourceTree = "<group>"; };
-		F498B8A21B668B2B00DA1778 /* ETHLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETHLogger.h; sourceTree = "<group>"; };
-		F498B8A31B668B2B00DA1778 /* ETHPausableTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETHPausableTimer.h; sourceTree = "<group>"; };
-		F498B8A41B668B2B00DA1778 /* ETHPausableTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETHPausableTimer.m; sourceTree = "<group>"; };
-		F498B8A51B668B2B00DA1778 /* ETHScreenManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETHScreenManager.h; sourceTree = "<group>"; };
-		F498B8A61B668B2B00DA1778 /* ETHScreenManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETHScreenManager.m; sourceTree = "<group>"; };
+		0C4FFBD21B8BD0B9002C3876 /* PausableTimerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.objc; path = PausableTimerTests.m; sourceTree = "<group>"; tabWidth = 2; usesTabs = 0; };
+		F43F75E51B9F2A4E00954745 /* EthanolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = EthanolUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F45ADFED1B852DBD003842E1 /* InjectorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.objc; path = InjectorTests.m; sourceTree = "<group>"; tabWidth = 2; usesTabs = 0; };
+		F498B8A01B668B2B00DA1778 /* ETHCocoaLumberjackLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.h; path = ETHCocoaLumberjackLogger.h; sourceTree = "<group>"; tabWidth = 2; usesTabs = 0; };
+		F498B8A11B668B2B00DA1778 /* ETHCocoaLumberjackLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.objc; path = ETHCocoaLumberjackLogger.m; sourceTree = "<group>"; tabWidth = 2; usesTabs = 0; };
+		F498B8A21B668B2B00DA1778 /* ETHLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.h; path = ETHLogger.h; sourceTree = "<group>"; tabWidth = 2; usesTabs = 0; };
+		F498B8A31B668B2B00DA1778 /* ETHPausableTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.h; path = ETHPausableTimer.h; sourceTree = "<group>"; tabWidth = 2; usesTabs = 0; };
+		F498B8A41B668B2B00DA1778 /* ETHPausableTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.objc; path = ETHPausableTimer.m; sourceTree = "<group>"; tabWidth = 2; usesTabs = 0; };
+		F498B8A51B668B2B00DA1778 /* ETHScreenManager.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.h; path = ETHScreenManager.h; sourceTree = "<group>"; tabWidth = 2; usesTabs = 0; };
+		F498B8A61B668B2B00DA1778 /* ETHScreenManager.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.objc; path = ETHScreenManager.m; sourceTree = "<group>"; tabWidth = 2; usesTabs = 0; };
 		F498B8B31B668FB400DA1778 /* SwiftLogging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftLogging.swift; sourceTree = "<group>"; };
-		F498B8B51B66902700DA1778 /* ETHInjector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETHInjector.h; sourceTree = "<group>"; };
-		F498B8B61B66902700DA1778 /* ETHInjector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETHInjector.m; sourceTree = "<group>"; };
+		F498B8B51B66902700DA1778 /* ETHInjector.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.h; path = ETHInjector.h; sourceTree = "<group>"; tabWidth = 2; usesTabs = 0; };
+		F498B8B61B66902700DA1778 /* ETHInjector.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.objc; path = ETHInjector.m; sourceTree = "<group>"; tabWidth = 2; usesTabs = 0; };
 		F4C14DF91B43294C003D1286 /* EthanolTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EthanolTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F4C14DFC1B43294C003D1286 /* EthanolTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EthanolTools.h; sourceTree = "<group>"; };
+		F4C14DFC1B43294C003D1286 /* EthanolTools.h */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.c.h; path = EthanolTools.h; sourceTree = "<group>"; tabWidth = 2; usesTabs = 0; };
 		F4C14DFE1B43294C003D1286 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4C14E031B43294C003D1286 /* EthanolToolsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EthanolToolsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		F4C14E081B43294C003D1286 /* EthanolToolsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EthanolToolsTests.m; sourceTree = "<group>"; };
 		F4C14E0A1B43294C003D1286 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4C2754C1B83AC6900838B17 /* CocoaLumberjack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CocoaLumberjack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -58,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F43F75E61B9F2A4E00954745 /* EthanolUtilities.framework in Frameworks */,
 				F4C2754D1B83AC6900838B17 /* CocoaLumberjack.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -67,6 +73,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4C14E041B43294C003D1286 /* EthanolTools.framework in Frameworks */,
+				F43F75E91B9F2B7400954745 /* EthanolUtilities.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,8 +121,9 @@
 		F4C14E071B43294C003D1286 /* EthanolToolsTests */ = {
 			isa = PBXGroup;
 			children = (
-				F4C14E081B43294C003D1286 /* EthanolToolsTests.m */,
 				F4C14E0A1B43294C003D1286 /* Info.plist */,
+				F45ADFED1B852DBD003842E1 /* InjectorTests.m */,
+				0C4FFBD21B8BD0B9002C3876 /* PausableTimerTests.m */,
 			);
 			path = EthanolToolsTests;
 			sourceTree = "<group>";
@@ -123,6 +131,7 @@
 		F4C2754E1B83AC6F00838B17 /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
+				F43F75E51B9F2A4E00954745 /* EthanolUtilities.framework */,
 				F4C2754C1B83AC6900838B17 /* CocoaLumberjack.framework */,
 			);
 			name = Dependencies;
@@ -253,7 +262,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4C14E091B43294C003D1286 /* EthanolToolsTests.m in Sources */,
+				0C4FFBD31B8BD0B9002C3876 /* PausableTimerTests.m in Sources */,
+				F45ADFEE1B852DBD003842E1 /* InjectorTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

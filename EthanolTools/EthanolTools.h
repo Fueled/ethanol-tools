@@ -1,9 +1,27 @@
 //
-//  EthanolToolsUtilities.h
-//  EthanolToolsUtilities
+//  EthanolTools.h
+//  EthanolTools
 //
 //  Created by stephane-fueled on 7/27/15
-//  Copyright © 2015 Stephane Copin. All rights reserved.
+//  Copyright (c) 2015 Fueled Digital Media, LLC.
+//
+//  Permission is hereby granted, free of charge, to any person obtaining a copy
+//  of this software and associated documentation files (the "Software"), to deal
+//  in the Software without restriction, including without limitation the rights
+//  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+//  copies of the Software, and to permit persons to whom the Software is
+//  furnished to do so, subject to the following conditions:
+//
+//  The above copyright notice and this permission notice shall be included in
+//  all copies or substantial portions of the Software.
+//
+//  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+//  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+//  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+//  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+//  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+//  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+//  THE SOFTWARE.
 //
 
 #import <UIKit/UIKit.h>
@@ -14,9 +32,10 @@ FOUNDATION_EXPORT double EthanolToolsVersionNumber;
 //! Project version string for EthanolTools.
 FOUNDATION_EXPORT const unsigned char EthanolToolsVersionString[];
 
-// In this header, you should import all the public headers of your framework using statements like #import <EthanolTools/PublicHeader.h>
+// In this header, you should import all the public headers of your framework using statements like #import "PublicHeader.h"
 
-#import <EthanolTools/ETHInjector.h>
-#import <EthanolTools/ETHLogger.h>
-#import <EthanolTools/ETHPausableTimer.h>
-#import <EthanolTools/ETHScreenManager.h>
+#import "ETHInjector.h"
+#import "ETHLogger.h"
+#import "ETHPausableTimer.h"
+#import "ETHScreenManager.h"
+#import "ETHCocoaLumberjackLogger.h"
