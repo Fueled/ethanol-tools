@@ -54,31 +54,31 @@
   return self;
 }
 
-- (void)bindClass:(Class)classToInstanciate toProtocol:(Protocol *)protocolType {
-  [self bindBlock:classToInstanciate != nil ? ^id{
-    return [[classToInstanciate alloc] init];
+- (void)protocolBindClass:(Class)classToInstantiate toProtocol:(Protocol *)protocolType {
+  [self protocolBindBlock:classToInstantiate != nil ? ^id{
+    return [[classToInstantiate alloc] init];
   } : nil toProtocol:protocolType];
 }
 
-- (void)bindClass:(Class)classToInstanciate toClass:(Class)classType {
-  [self bindBlock:classToInstanciate != nil ? ^id{
-    return [[classToInstanciate alloc] init];
+- (void)classBindClass:(Class)classToInstantiate toClass:(Class)classType {
+  [self classBindBlock:classToInstantiate != nil ? ^id{
+    return [[classToInstantiate alloc] init];
   } : nil toClass:classType];
 }
 
-- (void)bindInstance:(id)instance toProtocol:(Protocol *)protocolType {
-  [self bindBlock:instance != nil ? ^id{
+- (void)protocolBindInstance:(id)instance toProtocol:(Protocol *)protocolType {
+  [self protocolBindBlock:instance != nil ? ^id{
     return instance;
   } : nil toProtocol:protocolType];
 }
 
-- (void)bindInstance:(id)instance toClass:(Class)classType {
-  [self bindBlock:instance != nil ? ^id{
+- (void)classBindInstance:(id)instance toClass:(Class)classType {
+  [self classBindBlock:instance != nil ? ^id{
     return instance;
   } : nil toClass:classType];
 }
 
-- (void)bindBlock:(ETHInjectorBuilderBlock)builderBlock toProtocol:(Protocol *)protocolType {
+- (void)protocolBindBlock:(ETHInjectorBuilderBlock)builderBlock toProtocol:(Protocol *)protocolType {
   if(builderBlock == nil) {
     [self.protocolBuilderBlocks removeObjectForKey:NSStringFromProtocol(protocolType)];
   } else {
@@ -86,7 +86,7 @@
   }
 }
 
-- (void)bindBlock:(ETHInjectorBuilderBlock)builderBlock toClass:(Class)classType {
+- (void)classBindBlock:(ETHInjectorBuilderBlock)builderBlock toClass:(Class)classType {
   if(builderBlock == nil) {
     [self.classBuilderBlocks removeObjectForKey:NSStringFromClass(classType)];
   } else {
@@ -94,7 +94,7 @@
   }
 }
 
-- (id)instanceForProtocol:(Protocol *)protocolType {
+- (id)protocolInstanceForProtocol:(Protocol *)protocolType {
   ETHInjectorBuilderBlock builderBlock = self.protocolBuilderBlocks[NSStringFromProtocol(protocolType)];
   if(builderBlock != nil) {
     return builderBlock();
@@ -103,7 +103,7 @@
   return nil;
 }
 
-- (id)instanceForClass:(Class)classType {
+- (id)classInstanceForClass:(Class)classType {
   ETHInjectorBuilderBlock builderBlock = self.classBuilderBlocks[NSStringFromClass(classType)];
   if(builderBlock != nil) {
     return builderBlock() ?: [[classType alloc] init];;

@@ -27,7 +27,7 @@
 import Foundation
 
 private func ETHSwiftLog(_ flag: ETHLogFlag, file: String, function: String, line: UInt, format: String, args: CVaListPointer) {
-  if let logger = ETHInjector.default().instance(for: ETHLogger.self) as? ETHLogger , logger.logLevel.contains(ETHLogLevel(rawValue: flag.rawValue)) {
+  if let logger = ETHInjector.default().protocolInstance(for: ETHLogger.self) as? ETHLogger , logger.logLevel.contains(ETHLogLevel(rawValue: flag.rawValue)) {
     logger.log(flag, file: file, function: function, line: Int32(line), format: format, arguments: args);
   }
 }
