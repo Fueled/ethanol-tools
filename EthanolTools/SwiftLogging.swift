@@ -26,35 +26,35 @@
 
 import Foundation
 
-private func ETHSwiftLog(flag: ETHLogFlag, file: String, function: String, line: UInt, message: String) {
+private func ETHSwiftLog(flag: ETHLogFlag, file: String, function: String, line: UInt, @autoclosure message: () -> String) {
   if let logger = ETHInjector.defaultInjector().instanceForProtocol(ETHLogger) as? ETHLogger where logger.logLevel.contains(ETHLogLevel(rawValue: flag.rawValue)) {
-		withVaList([message]) { args in
+		withVaList([message()]) { args in
 			logger.log(flag, file: file, function: function, line: Int32(line), format: "%@", arguments: args)
 		}
   }
 }
 
-public func ETHLogTrace(message: String, file: String = #file, function: String = #function, line: UInt = #line) {
+public func ETHLogTrace(@autoclosure message: () -> String, file: String = #file, function: String = #function, line: UInt = #line) {
   ETHSwiftLog(.Trace, file: file, function: function, line: line, message: message)
 }
 
-public func ETHLogDebug(message: String, file: String = #file, function: String = #function, line: UInt = #line) {
+public func ETHLogDebug(@autoclosure message: () -> String, file: String = #file, function: String = #function, line: UInt = #line) {
   ETHSwiftLog(.Debug, file: file, function: function, line: line, message: message)
 }
 
-public func ETHLogVerbose(message: String, file: String = #file, function: String = #function, line: UInt = #line) {
+public func ETHLogVerbose(@autoclosure message: () -> String, file: String = #file, function: String = #function, line: UInt = #line) {
   ETHSwiftLog(.Verbose, file: file, function: function, line: line, message: message)
 }
 
-public func ETHLogInfo(message: String, file: String = #file, function: String = #function, line: UInt = #line) {
+public func ETHLogInfo(@autoclosure message: () -> String, file: String = #file, function: String = #function, line: UInt = #line) {
   ETHSwiftLog(.Info, file: file, function: function, line: line, message: message)
 }
 
-public func ETHLogWarning(message: String, file: String = #file, function: String = #function, line: UInt = #line) {
+public func ETHLogWarning(@autoclosure message: () -> String, file: String = #file, function: String = #function, line: UInt = #line) {
   ETHSwiftLog(.Warning, file: file, function: function, line: line, message: message)
 }
 
-public func ETHLogError(message: String, file: String = #file, function: String = #function, line: UInt = #line) {
+public func ETHLogError(@autoclosure message: () -> String, file: String = #file, function: String = #function, line: UInt = #line) {
   ETHSwiftLog(.Error, file: file, function: function, line: line, message: message)
 }
 
