@@ -27,21 +27,15 @@
 @import CocoaLumberjack;
 
 #import "ETHCocoaLumberjackLogger.h"
+#import "ETHCocoaLumberjackFormatter.h"
 #import "ETHInjector.h"
 
 @implementation ETHCocoaLumberjackLogger
 @synthesize logLevel = _logLevel;
 
 + (void)load {
-  [[DDTTYLogger sharedInstance] setForegroundColor:[UIColor whiteColor] backgroundColor:[UIColor grayColor] forFlag:(int)ETHLogFlagTrace];
-  [[DDTTYLogger sharedInstance] setForegroundColor:[UIColor grayColor] backgroundColor:nil forFlag:(int)ETHLogFlagVerbose];
-  [[DDTTYLogger sharedInstance] setForegroundColor:[UIColor colorWithRed:0.418 green:0.293 blue:0.148 alpha:1.000] backgroundColor:nil forFlag:(int)ETHLogFlagDebug];
-  [[DDTTYLogger sharedInstance] setForegroundColor:[UIColor colorWithRed:0.0f green:11 / 255.0f blue:255.0f alpha:1.0f] backgroundColor:nil forFlag:(int)ETHLogFlagInfo];
-  [[DDTTYLogger sharedInstance] setForegroundColor:[UIColor orangeColor] backgroundColor:nil forFlag:(int)ETHLogFlagWarning];
-  [[DDTTYLogger sharedInstance] setForegroundColor:[UIColor redColor] backgroundColor:nil forFlag:(int)ETHLogFlagError];
-  [[DDTTYLogger sharedInstance] setForegroundColor:[UIColor whiteColor] backgroundColor:[UIColor redColor] forFlag:(int)ETHLogFlagFatal];
-  
-  [[DDTTYLogger sharedInstance] setColorsEnabled:YES];
+  [DDASLLogger sharedInstance].logFormatter = [[ETHCocoaLumberjackFormatter alloc] init];
+  [DDTTYLogger sharedInstance].logFormatter = [DDASLLogger sharedInstance].logFormatter;
 }
 
 - (void)log:(ETHLogFlag)flag file:(NSString *)file function:(NSString *)function line:(int)line format:(NSString *)format, ... {
