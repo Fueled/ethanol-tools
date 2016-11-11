@@ -26,36 +26,39 @@
 
 import Foundation
 
-private func ETHSwiftLog(_ flag: ETHLogFlag, file: String, function: String, line: UInt, format: String, args: CVaListPointer) {
-  if let logger = ETHInjector.default().protocolInstance(for: ETHLogger.self) as? ETHLogger , logger.logLevel.contains(ETHLogLevel(rawValue: flag.rawValue)) {
-    logger.log(flag, file: file, function: function, line: Int32(line), format: format, arguments: args);
+private func ETHSwiftLog(_ flag: ETHLogFlag, file: String, function: String, line: UInt, message: @autoclosure () -> String) {
+	if let logger = ETHInjector.default().protocolInstance(for: ETHLogger.self) as? ETHLogger, logger.logLevel.contains(ETHLogLevel(rawValue: flag.rawValue)) {
+		withVaList([message()]) { args in
+			logger.log(flag, file: file, function: function, line: Int32(line), format: "%@", arguments: args)
+		}
   }
 }
 
-public func ETHLogTrace(_ format: String, file: String = #file, function: String = #function, line: UInt = #line, args: CVarArg...) {
-  ETHSwiftLog(.trace, file: file, function: function, line: line, format: format, args: getVaList(args));
+public func ETHLogTrace(message: @autoclosure () -> String, file: String = #file, function: String = #function, line: UInt = #line) {
+  ETHSwiftLog(.trace, file: file, function: function, line: line, message: message)
 }
 
-public func ETHLogDebug(_ format: String, file: String = #file, function: String = #function, line: UInt = #line, args: CVarArg...) {
-  ETHSwiftLog(.debug, file: file, function: function, line: line, format: format, args: getVaList(args));
+public func ETHLogDebug(message: @autoclosure () -> String, file: String = #file, function: String = #function, line: UInt = #line) {
+  ETHSwiftLog(.debug, file: file, function: function, line: line, message: message)
 }
 
-public func ETHLogVerbose(_ format: String, file: String = #file, function: String = #function, line: UInt = #line, args: CVarArg...) {
-  ETHSwiftLog(.verbose, file: file, function: function, line: line, format: format, args: getVaList(args));
+public func ETHLogVerbose(message: @autoclosure () -> String, file: String = #file, function: String = #function, line: UInt = #line) {
+  ETHSwiftLog(.verbose, file: file, function: function, line: line, message: message)
 }
 
-public func ETHLogInfo(_ format: String, file: String = #file, function: String = #function, line: UInt = #line, args: CVarArg...) {
-  ETHSwiftLog(.info, file: file, function: function, line: line, format: format, args: getVaList(args));
+public func ETHLogInfo(message: @autoclosure () -> String, file: String = #file, function: String = #function, line: UInt = #line) {
+  ETHSwiftLog(.info, file: file, function: function, line: line, message: message)
 }
 
-public func ETHLogWarning(_ format: String, file: String = #file, function: String = #function, line: UInt = #line, args: CVarArg...) {
-  ETHSwiftLog(.warning, file: file, function: function, line: line, format: format, args: getVaList(args));
+public func ETHLogWarning(message: @autoclosure () -> String, file: String = #file, function: String = #function, line: UInt = #line) {
+  ETHSwiftLog(.warning, file: file, function: function, line: line, message: message)
 }
 
-public func ETHLogError(_ format: String, file: String = #file, function: String = #function, line: UInt = #line, args: CVarArg...) {
-  ETHSwiftLog(.error, file: file, function: function, line: line, format: format, args: getVaList(args));
+public func ETHLogError(message: @autoclosure () -> String, file: String = #file, function: String = #function, line: UInt = #line) {
+	ETHSwiftLog(.error, file: file, function: function, line: line, message: message)
 }
 
-public func ETHLogFatal(_ format: String, file: String = #file, function: String = #function, line: UInt = #line, args: CVarArg...) {
-  ETHSwiftLog(.fatal, file: file, function: function, line: line, format: format, args: getVaList(args));
+public func ETHLogFatal(message: String, file: String = #file, function: String = #function, line: UInt = #line) -> Never {
+  ETHSwiftLog(.fatal, file: file, function: function, line: line, message: message)
+	fatalError(message)
 }

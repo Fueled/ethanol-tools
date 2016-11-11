@@ -10,6 +10,8 @@
 		0C4FFBD31B8BD0B9002C3876 /* PausableTimerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C4FFBD21B8BD0B9002C3876 /* PausableTimerTests.m */; };
 		779418941DAD932C00BC7BF5 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 779418931DAD932C00BC7BF5 /* Cartfile */; };
 		F42307CD1B4C2639007425D4 /* EthanolTools.h in Headers */ = {isa = PBXBuildFile; fileRef = F4C14DFC1B43294C003D1286 /* EthanolTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F42AABC31DD0F030006B4442 /* ETHCocoaLumberjackFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = F42AABC11DD0F030006B4442 /* ETHCocoaLumberjackFormatter.h */; };
+		F42AABC41DD0F030006B4442 /* ETHCocoaLumberjackFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = F42AABC21DD0F030006B4442 /* ETHCocoaLumberjackFormatter.m */; };
 		F43F75E61B9F2A4E00954745 /* EthanolUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F43F75E51B9F2A4E00954745 /* EthanolUtilities.framework */; };
 		F43F75E91B9F2B7400954745 /* EthanolUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F43F75E51B9F2A4E00954745 /* EthanolUtilities.framework */; };
 		F45ADFEE1B852DBD003842E1 /* InjectorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F45ADFED1B852DBD003842E1 /* InjectorTests.m */; };
@@ -40,6 +42,8 @@
 /* Begin PBXFileReference section */
 		0C4FFBD21B8BD0B9002C3876 /* PausableTimerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.objc; path = PausableTimerTests.m; sourceTree = "<group>"; tabWidth = 2; usesTabs = 0; };
 		779418931DAD932C00BC7BF5 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = SOURCE_ROOT; };
+		F42AABC11DD0F030006B4442 /* ETHCocoaLumberjackFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETHCocoaLumberjackFormatter.h; sourceTree = "<group>"; };
+		F42AABC21DD0F030006B4442 /* ETHCocoaLumberjackFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETHCocoaLumberjackFormatter.m; sourceTree = "<group>"; };
 		F43F75E51B9F2A4E00954745 /* EthanolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = EthanolUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F45ADFED1B852DBD003842E1 /* InjectorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.objc; path = InjectorTests.m; sourceTree = "<group>"; tabWidth = 2; usesTabs = 0; };
 		F498B8A01B668B2B00DA1778 /* ETHCocoaLumberjackLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.h; path = ETHCocoaLumberjackLogger.h; sourceTree = "<group>"; tabWidth = 2; usesTabs = 0; };
@@ -110,6 +114,8 @@
 				F498B8A21B668B2B00DA1778 /* ETHLogger.h */,
 				F498B8A01B668B2B00DA1778 /* ETHCocoaLumberjackLogger.h */,
 				F498B8A11B668B2B00DA1778 /* ETHCocoaLumberjackLogger.m */,
+				F42AABC11DD0F030006B4442 /* ETHCocoaLumberjackFormatter.h */,
+				F42AABC21DD0F030006B4442 /* ETHCocoaLumberjackFormatter.m */,
 				F498B8A31B668B2B00DA1778 /* ETHPausableTimer.h */,
 				F498B8A41B668B2B00DA1778 /* ETHPausableTimer.m */,
 				F498B8A51B668B2B00DA1778 /* ETHScreenManager.h */,
@@ -148,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F498B8A91B668B2B00DA1778 /* ETHLogger.h in Headers */,
+				F42AABC31DD0F030006B4442 /* ETHCocoaLumberjackFormatter.h in Headers */,
 				F498B8A71B668B2B00DA1778 /* ETHCocoaLumberjackLogger.h in Headers */,
 				F498B8B71B66902700DA1778 /* ETHInjector.h in Headers */,
 				F498B8AC1B668B2B00DA1778 /* ETHScreenManager.h in Headers */,
@@ -256,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F498B8AB1B668B2B00DA1778 /* ETHPausableTimer.m in Sources */,
+				F42AABC41DD0F030006B4442 /* ETHCocoaLumberjackFormatter.m in Sources */,
 				F498B8B81B66902700DA1778 /* ETHInjector.m in Sources */,
 				F498B8B41B668FB400DA1778 /* SwiftLogging.swift in Sources */,
 				F498B8A81B668B2B00DA1778 /* ETHCocoaLumberjackLogger.m in Sources */,

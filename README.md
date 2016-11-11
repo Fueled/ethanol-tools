@@ -11,3 +11,10 @@ You can also use the following if you haven't configured https yet:
 
 	git "git@github.com:Fueled/ethanol-tools.git"
 
+# Changelog
+### 0.1.12
+Updated for **Xcode8.x** and **Swift 2.3.x**
+### 0.1.11
+Suitable for **Xcode7.x** and **Swift 2.2.x**
+
+For swift 3.0, please refer to the `swift-3` branch in your Cartfile.
