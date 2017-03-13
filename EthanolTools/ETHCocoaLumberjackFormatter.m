@@ -18,14 +18,13 @@
 @implementation ETHCocoaLumberjackFormatter
 @synthesize dateFormatter = _dateFormatter;
 
-- (NSDateFormatter *)dateFormatter {
-	if (_dateFormatter != nil) {
-		return _dateFormatter;
+- (instancetype)init {
+	self = [super init];
+	if (self != nil) {
+		_dateFormatter = [[NSDateFormatter alloc] init];
+		_dateFormatter.dateFormat = @"YYYY-MM-dd' 'HH-mm-ss'.'SSS";
 	}
-	
-	_dateFormatter = [[NSDateFormatter alloc] init];
-	_dateFormatter.dateFormat = @"YYYY-MM-dd' 'HH-mm-ss'.'SSS";
-	return _dateFormatter;
+	return self;
 }
 
 - (NSString *)formatLogMessage:(DDLogMessage *)logMessage {
