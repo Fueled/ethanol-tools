@@ -30,16 +30,16 @@ typedef id (^ ETHInjectorBuilderBlock)(void);
 
 + (instancetype)defaultInjector;
 
-- (void)bindClass:(Class)classToInstanciate toProtocol:(Protocol *)protocolType;
-- (void)bindClass:(Class)classToInstanciate toClass:(Class)classType;
+- (void)protocolBindClass:(Class)classToInstantiate toProtocol:(Protocol *)protocolType;
+- (void)classBindClass:(Class)classToInstantiate toClass:(Class)classType;
 
-- (void)bindInstance:(id)instance toProtocol:(Protocol *)protocolType;
-- (void)bindInstance:(id)instance toClass:(Class)classType;
+- (void)protocolBindInstance:(id)instance toProtocol:(Protocol *)protocolType;
+- (void)classBindInstance:(id)instance toClass:(Class)classType;
 
-- (void)bindBlock:(ETHInjectorBuilderBlock)builderBlock toProtocol:(Protocol *)protocolType;
-- (void)bindBlock:(ETHInjectorBuilderBlock)builderBlock toClass:(Class)classType;
+- (void)protocolBindBlock:(ETHInjectorBuilderBlock)builderBlock toProtocol:(Protocol *)protocolType;
+- (void)classBindBlock:(ETHInjectorBuilderBlock)builderBlock toClass:(Class)classType;
 
-- (id)instanceForProtocol:(Protocol *)protocolType;
-- (id)instanceForClass:(Class)classType;
+- (id)protocolInstanceForProtocol:(Protocol *)protocolType;
+- (id)classInstanceForClass:(Class)classType;
 
 @end

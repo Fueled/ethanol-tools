@@ -84,7 +84,7 @@ typedef NS_OPTIONS(NSUInteger, ETHLogLevel) {
 
 #define _ETHLog(flag, formatString, ...) \
   do { \
-    id<ETHLogger> logger = [[ETHInjector defaultInjector] instanceForProtocol:@protocol(ETHLogger)]; \
+    id<ETHLogger> logger = [[ETHInjector defaultInjector] protocolInstanceForProtocol:@protocol(ETHLogger)]; \
     if((logger.logLevel & (flag)) == (flag)) { \
       [logger log:(flag) file:[NSString stringWithUTF8String:__FILE__] function:NSStringFromSelector(_cmd) line:__LINE__ format:(formatString), ## __VA_ARGS__]; \
     } \

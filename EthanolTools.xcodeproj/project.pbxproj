@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0C4FFBD31B8BD0B9002C3876 /* PausableTimerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C4FFBD21B8BD0B9002C3876 /* PausableTimerTests.m */; };
+		779418941DAD932C00BC7BF5 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 779418931DAD932C00BC7BF5 /* Cartfile */; };
 		F42307CD1B4C2639007425D4 /* EthanolTools.h in Headers */ = {isa = PBXBuildFile; fileRef = F4C14DFC1B43294C003D1286 /* EthanolTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F42AABC31DD0F030006B4442 /* ETHCocoaLumberjackFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = F42AABC11DD0F030006B4442 /* ETHCocoaLumberjackFormatter.h */; };
 		F42AABC41DD0F030006B4442 /* ETHCocoaLumberjackFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = F42AABC21DD0F030006B4442 /* ETHCocoaLumberjackFormatter.m */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		0C4FFBD21B8BD0B9002C3876 /* PausableTimerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.objc; path = PausableTimerTests.m; sourceTree = "<group>"; tabWidth = 2; usesTabs = 0; };
+		779418931DAD932C00BC7BF5 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = SOURCE_ROOT; };
 		F42AABC11DD0F030006B4442 /* ETHCocoaLumberjackFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ETHCocoaLumberjackFormatter.h; sourceTree = "<group>"; };
 		F42AABC21DD0F030006B4442 /* ETHCocoaLumberjackFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ETHCocoaLumberjackFormatter.m; sourceTree = "<group>"; };
 		F43F75E51B9F2A4E00954745 /* EthanolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = EthanolUtilities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -119,6 +121,7 @@
 				F498B8A51B668B2B00DA1778 /* ETHScreenManager.h */,
 				F498B8A61B668B2B00DA1778 /* ETHScreenManager.m */,
 				F498B8B31B668FB400DA1778 /* SwiftLogging.swift */,
+				779418931DAD932C00BC7BF5 /* Cartfile */,
 				F4C14DFE1B43294C003D1286 /* Info.plist */,
 			);
 			path = EthanolTools;
@@ -211,6 +214,7 @@
 				TargetAttributes = {
 					F4C14DF81B43294C003D1286 = {
 						CreatedOnToolsVersion = 7.0;
+						LastSwiftMigration = 0800;
 					};
 					F4C14E021B43294C003D1286 = {
 						CreatedOnToolsVersion = 7.0;
@@ -240,6 +244,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				779418941DAD932C00BC7BF5 /* Cartfile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,7 +402,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -416,7 +421,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.fueled.EthanolTools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
